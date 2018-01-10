@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.dfinal2.Setting">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d9d9d9"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="1dip"
+            android:color="#ffffffff"
+            android:elevation="0dp"
+            android:shape="rectangle"
+            android:text="登出"
+            android:textAlignment="viewStart"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/deleteallcards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="1dip"
+            android:color="#ffffffff"
+            android:elevation="0dp"
+            android:shape="rectangle"
+            android:text="重新選卡"
+            android:textAlignment="viewStart"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp" />
+    </LinearLayout>
+</FrameLayout>

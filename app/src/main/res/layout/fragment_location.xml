@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.dfinal2.Location1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dfdfdf"
+        android:orientation="vertical">
+
+
+        <!--<com.google.android.gms.maps.MapView-->
+            <!--android:id="@+id/mapView2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="300dp" />-->
+
+        <Button
+            android:id="@+id/testGps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.dfinal2.select_card"
+    tools:showIn="@layout/activity_select_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#009fb7"
+            android:fontFamily="@font/tcm"
+            android:text="YOUR ACCOUNTANT"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#c0dad9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:paddingRight="30dp"
+                android:text="持有卡選擇"
+                android:textColor="#002060"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:id="@+id/inputcard"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+                </ScrollView>
+                <Button
+                    android:id="@+id/submitcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#a3def4"
+                    android:fontFamily="@font/tcm"
+                    android:text="送出"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

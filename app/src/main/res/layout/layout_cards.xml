@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/listviewallcard"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="38dp"></ImageView>
+            <!--android:layout_toEndOf="@+id/imageButton" />-->
+
+        <ImageView
+            android:id="@+id/contentlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="46dp"
+            android:layout_toEndOf="@+id/cardimge"
+            app:srcCompat="@drawable/cardinfo" />
+
+        <TextView
+            android:id="@+id/cardsinfos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/cardimge"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/contentlogo"
+            android:layout_alignStart="@+id/cardsinfos"
+            android:layout_marginStart="26dp" />
+
+        <ImageView
+            android:id="@+id/leftbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_toStartOf="@+id/cardsinfos"
+            app:srcCompat="@drawable/leftbar" />
+    </RelativeLayout>
+</LinearLayout>

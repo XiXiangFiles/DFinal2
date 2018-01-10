@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.dfinal2.select_bank"
+    tools:showIn="@layout/activity_select_bank">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#009fb7"
+            android:fontFamily="@font/tcm"
+            android:text="YOUR ACCOUNTANT"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#c0dad9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:paddingRight="30dp"
+                android:text="持有卡選擇"
+                android:textColor="#002060"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/bank1"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="凱基銀行"
+                            android:textAlignment="textStart"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank2"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="花旗銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank3"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="聯邦銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank4"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="澳盛銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank5"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="富邦銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank6"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="玉山銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank7"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="中國信託"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank8"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="永豐銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank9"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="國泰世華"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank10"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="大眾銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank11"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="渣打銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank12"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="華南銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank13"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="第一銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank14"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="上海商業儲蓄銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank15"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="台新銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank16"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="土地銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank17"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="兆豐銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank18"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="遠東商銀"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank19"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="新光銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank20"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="美國運通"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank21"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="匯豐銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank22"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="元大銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank23"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="彰化銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank24"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="台中銀行"
+                            android:textSize="20dp" />
+
+                        <CheckBox
+                            android:id="@+id/bank25"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:text="合作金庫"
+                            android:textSize="20dp" />
+
+                        <Button
+                            android:id="@+id/check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#a3def4"
+                            android:fontFamily="@font/tcm"
+                            android:text="start"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

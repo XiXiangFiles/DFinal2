@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.dfinal2.Manuabill"
+    tools:showIn="@layout/activity_manuabill">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="#067ed0"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="手動記帳"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/Calander1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CalendarView
+                            android:id="@+id/calendarView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/chose_c1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="#62a39f"
+                                android:text="選擇"
+                                android:textColor="@color/cardview_light_background" />
+                        </TableRow>
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableLayout
+                    android:id="@+id/manu_content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center"
+                            android:text="日期"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/M_date1"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/tcm"
+                            android:gravity="center"
+                            android:text="2017/12/24"
+                            android:textAlignment="center"
+                            android:textSize="24sp" />
+
+                        <ImageButton
+                            android:id="@+id/m_calandar1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/calendar" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center"
+                            android:text="種類"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/m_type1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="@android:color/background_light" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center"
+                            android:text="項目"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/m_item1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="@android:color/background_light" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView36"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center"
+                            android:text="金額"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/price_m11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/cardview_light_background"
+                            android:ems="10"
+                            android:fontFamily="@font/tcm"
+                            android:inputType="textPersonName"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="70dp"
+                            android:text="0"
+                            android:textAlignment="textEnd" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView37"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center"
+                            android:text="摘要"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/munu_info1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/background_light"
+                            android:ems="10"
+                            android:fontFamily="@font/tcm"
+                            android:inputType="textMultiLine" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/manu_button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/submit_manu11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#067ed0"
+                            android:text="完成"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="18sp" />
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
