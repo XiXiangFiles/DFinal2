@@ -296,16 +296,21 @@ public class maptest extends Fragment implements OnMapReadyCallback {
                                             Bitmap bitmap = BitmapFactory.decodeStream(input);
                                             try {
                                                 getActivity().runOnUiThread(() -> {
-                                                    String []loca=splitdata_G[1].split(",");
-                                                    LatLng latLng= new LatLng(Double.valueOf(loca[0]),Double.valueOf(loca[1]));
-                                                    googleMap.addMarker(new MarkerOptions().position(latLng).title(splitdata_G[0]));
+                                                    try{
+                                                        String []local=splitdata_G[1].split(",");
+                                                        LatLng latLng= new LatLng(Double.valueOf(local[0]),Double.valueOf(local[1]));
+                                                       googleMap.addMarker(new MarkerOptions().position(latLng).title(splitdata_G[0]));
 
-                                                    lab.add(bitmap);
-                                                    items.add(splitdata_G[0]);
-                                                    lab2.add(splitdata_I[1]);
-                                                    ListView listview=(ListView)getView().findViewById(R.id.Listview3);
-                                                    Recommandlist recommandlist=new Recommandlist(getActivity(),lab,lab2,items);
-                                                    listview.setAdapter(recommandlist);
+                                                        lab.add(bitmap);
+                                                        items.add(splitdata_G[0]);
+                                                        lab2.add(splitdata_I[1]);
+                                                        ListView listview=(ListView)getView().findViewById(R.id.Listview3);
+                                                        Recommandlist recommandlist=new Recommandlist(getActivity(),lab,lab2,items);
+                                                        listview.setAdapter(recommandlist);
+                                                    }catch (Exception e){
+
+                                                    }
+
                                                 });
 
                                             }catch (Exception e){
